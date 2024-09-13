@@ -141,7 +141,7 @@ function update() {
     context.fillText("Score : " + score, 200, 40); //TODO แก้ว่า Score อยู่ตรงไหน
     context.fillText("Time : " + time.toFixed(0), 20, 40);
     context.fillText("Live Remain : " + live, 20, 80);
-    if (time == 60) {
+    if (time >= 60) {
         gameOver = true;
         context.font = "normal bold 40px Arial"; //TODO แก้font + ลบComment
         context.textAlign = "center";
